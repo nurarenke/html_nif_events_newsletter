@@ -1,0 +1,835 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    </head>
+    <body bgcolor="#E1E1E1" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+        <!-- CENTER THE EMAIL // --> <!--
+        1.  The center tag should normally put all the
+        content in the middle of the email page.
+        I added "table-layout: fixed;" style to force
+        yahoomail which by default put the content left.
+        2.  For hotmail and yahoomail, the contents of
+        the email starts from this center, so we try to
+        apply necessary styling e.g. background-color.
+        --> <center style="background-color:#E1E1E1;">
+        <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" style="table-layout: fixed;max-width:100% !important;width: 100% !important;min-width: 100% !important;">
+            <tbody>
+                <tr>
+                    <td align="center" valign="top" id="bodyCell"><!-- EMAIL HEADER // --> <!--
+                    The table "emailBody" is the email's container.
+                    Its width can be set to 100% for a color band
+                    that spans the width of the page.
+                    -->
+                    <table bgcolor="#E1E1E1" border="0" cellpadding="0" cellspacing="0" width="500" id="emailHeader">
+                        <!-- HEADER ROW // -->
+                        <tbody>
+                            <tr>
+                                <td align="center" valign="top"><!-- CENTERING TABLE // -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top"><!-- FLEXIBLE CONTAINER // -->
+                                            <table border="0" cellpadding="10" cellspacing="0" width="500" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td valign="top" width="500" class="flexibleContainerCell"><!-- CONTENT TABLE // -->
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <!--
+                                                                    The "invisibleIntroduction" is the text used for short preview
+                                                                    of the email before the user opens it (50 characters max). Sometimes,
+                                                                    you do not want to show this message depending on your design but this
+                                                                    text is highly recommended.
+                                                                    You do not have to worry if it is hidden, the next
+                                                                    <td> will automatically
+                                                                    center and apply to the width 100% and also shrink to 50% if the first
+                                                                    <td>
+                                                                    is visible.
+                                                                    -->
+                                                                    <td align="left" valign="middle" id="invisibleIntroduction" class="flexibleContainerBox" style="display:none !important; mso-hide:all;">
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:100%;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="left" class="textContent">
+                                                                                <div style="font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#828282;text-align:center;line-height:120%;">Learn about how NIF and our Israeli partners are approaching this new era of progressive organizing.</div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    </td>
+                                                                    <td align="right" valign="middle" class="flexibleContainerBox">
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:100%;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="left" class="textContent"><!-- CONTENT // -->
+                                                                                <div style="font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#828282;text-align:center;line-height:120%;">If you can't see this message, <a href="#" target="_blank" style="text-decoration:none;border-bottom:1px solid #828282;color:#828282;"><span style="color:#828282;">view&#160;it&#160;in&#160;your&#160;browser</span></a>.</div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- // FLEXIBLE CONTAINER --></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- // CENTERING TABLE --></td>
+                            </tr>
+                            <!-- // END -->
+                        </tbody>
+                    </table>
+                    <!-- // END -->   <!-- EMAIL BODY // --> <!--
+                    The table "emailBody" is the email's container.
+                    Its width can be set to 100% for a color band
+                    that spans the width of the page.
+                    -->
+                    <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="500" id="emailBody">
+                        <!-- MODULE ROW // --> <!--
+                        To move or duplicate any of the design patterns
+                        in this email, simply move or copy the entire
+                        MODULE ROW section for each content block.
+                        -->
+                        <tbody>
+                            <tr>
+                                <td align="center" valign="top"><!-- CENTERING TABLE // --> <!--
+                                The centering table keeps the content
+                                tables centered in the emailBody table,
+                                in case its width is set to 100%.
+                                -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="color:#FFFFFF;" bgcolor="#3498db">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top"><!-- FLEXIBLE CONTAINER // --> <!--
+                                            The flexible container has a set width
+                                            that gets overridden by the media query.
+                                            Most content tables within can then be
+                                            given 100% widths.
+                                            -->
+                                            <table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" valign="top" width="500" class="flexibleContainerCell"><!-- CONTENT TABLE // --> <!--
+                                                        The content table is the first element
+                                                        that's entirely separate from the structural
+                                                        framework of the email.
+                                                        -->                                                                                                                 <!-- // CONTENT TABLE --></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- // FLEXIBLE CONTAINER --></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- // CENTERING TABLE --></td>
+                            </tr>
+                            <!-- // MODULE ROW --> <!-- MODULE ROW // -->                               <!-- MODULE ROW // -->
+                            <tr>
+                                <td align="center" valign="top"><!--HEADER BANNER--><!-- CENTERING TABLE // -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F8F8F8">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top"><!-- FLEXIBLE CONTAINER // -->
+                                            <table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" valign="top" width="500" class="flexibleContainerCell"><a href="www.nif.org"><img src="https://wfc2.wiredforchange.com/o/8678/images/NIFeBlastBannerBasic_Mar2014.png" style="display:block;max-width:100%;" alt="New Israel Fund" id="header" /></a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- // FLEXIBLE CONTAINER --></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- // CENTERING TABLE --></td>
+                            </tr>
+                            <!-- // MODULE ROW -->   <!-- MODULE ROW // -->
+                            <tr>
+                                <td align="center" valign="top"><!-- CENTERING TABLE // -->                                                                 <!-- // CENTERING TABLE --></td>
+                            </tr>
+                            <!-- // MODULE ROW -->   <!-- MODULE ROW // -->
+                            <tr>
+                                <td align="center" valign="top"><!-- TOP IMAGE // --><!-- CENTERING TABLE // -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top"><!-- FLEXIBLE CONTAINER // -->
+                                            <table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" valign="top" width="500" class="flexibleContainerCell"><!-- CONTENT TABLE // -->
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top" class="imageContent"><br />
+                                                                    <a href="http://www.signupgenius.com/go/10c0d4dafad2aa5f49-israel1"> <img src="http://action.nif.org/images/SF%20emails/NIF%20ceo.png" class="flexibleImage" style="max-width:500px;width:100%;display:block;" alt="Text" title="Text" /></a></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!-- // CONTENT TABLE --></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- // FLEXIBLE CONTAINER --></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- // CENTERING TABLE --></td>
+                            </tr>
+                            <!-- // MODULE ROW -->   <!-- MODULE ROW // -->
+                            <tr>
+                                <td align="center" valign="top"><!-- TOP MESSAGE // --><!-- CENTERING TABLE // -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top"><!-- FLEXIBLE CONTAINER // -->
+                                            <table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" valign="top" width="500" class="flexibleContainerCell">
+                                                        <table border="0" cellpadding="30" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center" valign="top"><!-- CONTENT TABLE // -->
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td valign="top" class="textContent">
+                                                                                <h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Building Progressive Change in Israel: <br />
+                                                                                Notes from the Frontlines</h3>
+                                                                                <div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;margin-top:3px;color:#5F5F5F;line-height:135%;">Join our own Associate Director, Hannah Ellenson for <i>Building Progressive Change in Israel: Notes from the Frontlines</i> at Shabbat services at Congregation Rodef Sholom in San Rafael this <b>Friday, March 17</b> at 7:30 pm.  This service will be preceded by a Shabbat dinner at 6:00 pm in the JCC Lounge. Cost is $20 per person. RSVP to Molly at molly@rodefsholom.org.<br />
+                                                                                <br />
+                                                                                Can't make it? Check out our other events happening in the Bay Area below.</div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <!-- // CONTENT TABLE --></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- // FLEXIBLE CONTAINER --></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- // CENTERING TABLE --></td>
+                            </tr>
+                            <!-- // MODULE ROW -->   <!-- MODULE DIVIDER // -->                                                      <!-- // MODULE ROW -->   <!-- MODULE DIVIDER // -->
+                            <tr>
+                                <td align="center" valign="top"><!-- CENTERING TABLE // -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top"><!-- FLEXIBLE CONTAINER // -->
+                                            <table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" valign="top" width="500" class="flexibleContainerCell">
+                                                        <table class="flexibleContainerCellDivider" border="0" cellpadding="30" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center" valign="top" style="padding-top:0px;padding-bottom:0px;"><!-- CONTENT TABLE // -->
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="center" valign="top" style="border-top:1px solid #C8C8C8;"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <!-- // CONTENT TABLE --></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- // FLEXIBLE CONTAINER --></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- // CENTERING TABLE --></td>
+                            </tr>
+                            <!-- // END -->   <!-- MODULE ROW // -->
+                            <tr>
+                                <td align="center" valign="top"><!-- FIRST EVENT // --><!-- CENTERING TABLE // -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top"><!-- FLEXIBLE CONTAINER // -->
+                                            <table border="0" cellpadding="30" cellspacing="0" width="500" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td valign="top" width="500" class="flexibleContainerCell"><!-- CONTENT TABLE // -->
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="left" valign="top" class="flexibleContainerBox">
+                                                                    <table border="0" cellpadding="5" cellspacing="0" width="210" style="max-width:100%;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="left" class="textContent"><a href="https://hartman.org.il/EventsStudy_View.asp?Article_Id=294&amp;Cat_Id=269&amp;Cat_Type=Calendar"><img src="http://action.nif.org/images/SF%20emails/hartmanruth.png" class="flexibleImage" alt="Text" title="Text" /></a></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    </td>
+                                                                    <td align="right" valign="top" class="flexibleContainerBox">
+                                                                    <table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="left" class="textContent">
+                                                                                <h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Intergenerational Conversation with<br />
+                                                                                Ruth Calderon</h3>
+                                                                                <div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;"><b><span style="font-size: 15px;color:#0085BD;line-height:135%;">Wednesday, March 29<br />
+                                                                                </span></b>New Israel Fund is facilitating and partnering with the Shalom Hartman Institute for the fourth intergenerational conversation on Jewish values and the Israeli Palestinian conflict.<br />
+                                                                                <br />
+                                                                                <a href="https://hartman.org.il/EventsStudy_View.asp?Article_Id=294&amp;Cat_Id=269&amp;Cat_Type=Calendar">                                                                                 Click here for more information</a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!-- // CONTENT TABLE --></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- // FLEXIBLE CONTAINER --></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- // CENTERING TABLE --></td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top"><!-- CENTERING TABLE // -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top"><!-- FLEXIBLE CONTAINER // -->
+                                            <table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" valign="top" width="500" class="flexibleContainerCell">
+                                                        <table class="flexibleContainerCellDivider" border="0" cellpadding="30" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center" valign="top" style="padding-top:0px;padding-bottom:0px;"><!-- CONTENT TABLE // -->
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="center" valign="top" style="border-top:1px solid #C8C8C8;"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <!-- // CONTENT TABLE --></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- // FLEXIBLE CONTAINER --></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- // CENTERING TABLE --></td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top"><!-- SECOND EVENT // --><!-- CENTERING TABLE // -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top"><!-- FLEXIBLE CONTAINER // -->
+                                            <table border="0" cellpadding="30" cellspacing="0" width="500" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td valign="top" width="500" class="flexibleContainerCell"><!-- CONTENT TABLE // -->
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="left" valign="top" class="flexibleContainerBox">
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="left" class="textContent">
+                                                                                <h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Noam Sheizaf at<br />
+                                                                                Kehilla Community Synagogue</h3>
+                                                                                <div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;"><b><span style="font-size: 15px;color:#0085BD;line-height:135%;">Friday, March 31</span></b><br />
+                                                                                Noam Sheizaf, a Tel Aviv–based journalist, and the founding editor of +972 Magazine, will discuss Israel, Palestine and the significance of 50 years since the '67 War. There is another event below if you can't make this one!<br />
+                                                                                <br />
+                                                                                <a href="https://www.eventbrite.com/e/spiritual-fitness-noam-sheizaf-tickets-32637694222">                                                                                 Click here for more information.</a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    </td>
+                                                                    <td align="right" valign="top" class="flexibleContainerBox">
+                                                                    <table class="flexibleContainerBoxNext" border="0" cellpadding="5" cellspacing="0" width="210" style="max-width:100%;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="left" class="textContent"><a href="https://www.eventbrite.com/e/spiritual-fitness-noam-sheizaf-tickets-32637694222"> <img src="http://action.nif.org/images/SF%20emails/noamsheizaf_cropped.png" class="flexibleImage" alt="Text" title="Text" /></a></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!-- // CONTENT TABLE --></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- // FLEXIBLE CONTAINER --></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- // CENTERING TABLE --></td>
+                            </tr>
+                            <!-- // MODULE ROW -->   <!-- MODULE DIVIDER // -->
+                            <tr>
+                                <td align="center" valign="top"><!-- CENTERING TABLE // -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top"><!-- FLEXIBLE CONTAINER // -->
+                                            <table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" valign="top" width="500" class="flexibleContainerCell">
+                                                        <table class="flexibleContainerCellDivider" border="0" cellpadding="30" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center" valign="top" style="padding-top:0px;padding-bottom:0px;"><!-- CONTENT TABLE // -->
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="center" valign="top" style="border-top:1px solid #C8C8C8;"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <!-- // CONTENT TABLE --></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- // FLEXIBLE CONTAINER --></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- // CENTERING TABLE --></td>
+                            </tr>
+                            <!-- // END -->   <!-- MODULE ROW // -->
+                            <tr>
+                                <td align="center" valign="top"><!-- THIRD EVENT // --><!-- CENTERING TABLE // -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top"><!-- FLEXIBLE CONTAINER // -->
+                                            <table border="0" cellpadding="30" cellspacing="0" width="500" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td valign="top" width="500" class="flexibleContainerCell"><!-- CONTENT TABLE // -->
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="left" valign="top" class="flexibleContainerBox">
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="left" class="textContent"><a href="https://www.eventbrite.com/e/spiritual-fitness-noam-sheizaf-tickets-32637694222"> <img src="http://action.nif.org/images/SF%20emails/noamsheizaf_cropped.png" class="flexibleImage" alt="Text" title="Text" /></a></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    </td>
+                                                                    <td align="right" valign="top" class="flexibleContainerBox">
+                                                                    <table class="flexibleContainerBoxNext" border="0" cellpadding="5" cellspacing="0" width="210" style="max-width:100%;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="left" class="textContent">
+                                                                                <h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Noam Sheizaf at<br />
+                                                                                The Kitchen</h3>
+                                                                                <div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;"><b><span style="font-size: 15px;color:#0085BD;line-height:135%;">Thursday, April 6</span></b><br />
+                                                                                Noam Sheizaf, a Tel Aviv–based journalist, and the founding editor of +972 Magazine, will discuss Israel, Palestine and the significance of 50 years since the '67 War.<br />
+                                                                                <br />
+                                                                                <a href="https://www.eventbrite.com/e/spiritual-fitness-noam-sheizaf-tickets-32637694222">                                                                                 Click here for more information.</a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!-- // CONTENT TABLE --></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- // FLEXIBLE CONTAINER --></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- // CENTERING TABLE --></td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top"><!-- CENTERING TABLE // -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top"><!-- FLEXIBLE CONTAINER // -->
+                                            <table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" valign="top" width="500" class="flexibleContainerCell">
+                                                        <table class="flexibleContainerCellDivider" border="0" cellpadding="30" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center" valign="top" style="padding-top:0px;padding-bottom:0px;"><!-- CONTENT TABLE // -->
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="center" valign="top" style="border-top:1px solid #C8C8C8;"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <!-- // CONTENT TABLE --></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- // FLEXIBLE CONTAINER --></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- // CENTERING TABLE --></td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top"><!-- FOURTH EVENT // --><!-- CENTERING TABLE // -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top"><!-- FLEXIBLE CONTAINER // -->
+                                            <table border="0" cellpadding="30" cellspacing="0" width="500" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td valign="top" width="500" class="flexibleContainerCell"><!-- CONTENT TABLE // -->
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="left" valign="top" class="flexibleContainerBox">
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="left" class="textContent">
+                                                                                <h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;"><span style="font-size:16px;line-height:85%">Berkeley Institute for Jewish Law and Israel Studies<br />
+                                                                                </span> International Conference on Israeli Art &amp; Society</h3>
+                                                                                <div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;"><b><span style="font-size: 15px;color:#0085BD;line-height:135%;">Wed-Fri, April 5-7</span></b><br />
+                                                                                This conference will bring Israeli scholars and artists together to examine critical issues in Israeli society through the arts and explore how the arts express and shape Israel today. <br />
+                                                                                <br />
+                                                                                <a href="https://www.eventbrite.com/e/spiritual-fitness-noam-sheizaf-tickets-32637694222">                                                                                 Click here for more information.</a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    </td>
+                                                                    <td align="right" valign="top" class="flexibleContainerBox">
+                                                                    <table class="flexibleContainerBoxNext" border="0" cellpadding="5" cellspacing="0" width="210" style="max-width:100%;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="left" class="textContent"><a href="https://www.eventbrite.com/e/spiritual-fitness-noam-sheizaf-tickets-32637694222"> <img src="http://action.nif.org/images/SF%20emails/noamsheizaf_cropped.png" class="flexibleImage" alt="Text" title="Text" /></a></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!-- // CONTENT TABLE --></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- // FLEXIBLE CONTAINER --></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- // CENTERING TABLE --></td>
+                            </tr>
+                            <!-- // MODULE ROW -->   <!-- MODULE DIVIDER // -->
+                            <tr>
+                                <td align="center" valign="top"><!-- CENTERING TABLE // -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top"><!-- FLEXIBLE CONTAINER // -->
+                                            <table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" valign="top" width="500" class="flexibleContainerCell">
+                                                        <table class="flexibleContainerCellDivider" border="0" cellpadding="30" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center" valign="top" style="padding-top:0px;padding-bottom:0px;"><!-- CONTENT TABLE // -->
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="center" valign="top" style="border-top:1px solid #C8C8C8;"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <!-- // CONTENT TABLE --></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- // FLEXIBLE CONTAINER --></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- // CENTERING TABLE --></td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top"><!-- FIFTH EVENT // --><!-- CENTERING TABLE // -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top"><!-- FLEXIBLE CONTAINER // -->
+                                            <table border="0" cellpadding="30" cellspacing="0" width="500" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td valign="top" width="500" class="flexibleContainerCell"><!-- CONTENT TABLE // -->
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="left" valign="top" class="flexibleContainerBox">
+                                                                    <table border="0" cellpadding="5" cellspacing="0" width="210" style="max-width:100%;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="left" class="textContent"><a href="http://wfc2.wiredforchange.com/o/8678/p/salsa/event/common/public/?event_KEY=72901"><img src="http://action.nif.org/images/SF%20emails/pechakucha_cropped.png" class="flexibleImage" hspace="5" alt="" /></a></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    </td>
+                                                                    <td align="right" valign="top" class="flexibleContainerBox">
+                                                                    <table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="left" class="textContent">
+                                                                                <h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">New Gen's<br />
+                                                                                Alternative Israeli Independence Day</h3>
+                                                                                <div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;"><b><span style="font-size: 15px;color:#0085BD;line-height:135%;">Thursday, May 5<br />
+                                                                                </span></b>A PechaKucha-style event featuring 8 amazing speakers taking the audience on an emotional, intellectual and aesthetic journey. It's Israel's birthday and the 50th year of the Occupation - let's talk!<br />
+                                                                                <br />
+                                                                                <a href="http://wfc2.wiredforchange.com/o/8678/p/salsa/event/common/public/?event_KEY=72901">                                                                                 Click here for more information.</a></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!-- // CONTENT TABLE --></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- // FLEXIBLE CONTAINER --></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </td>
+                            </tr>
+                            <!-- // END -->   <!-- MODULE ROW // -->
+                            <tr>
+                                <td align="center" valign="top"><!-- CENTERING TABLE // -->                                                                  <!-- // CENTERING TABLE --></td>
+                            </tr>
+                            <!-- // MODULE ROW -->   <!-- MODULE DIVIDER // -->
+                            <tr>
+                                <td align="center" valign="top"><!-- CENTERING TABLE // -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top"><!-- FLEXIBLE CONTAINER // -->
+                                            <table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" valign="top" width="500" class="flexibleContainerCell">
+                                                        <table class="flexibleContainerCellDivider" border="0" cellpadding="30" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center" valign="top" style="padding-top:0px;padding-bottom:0px;"><!-- CONTENT TABLE // -->
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="center" valign="top" style="border-top:1px solid #C8C8C8;"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <!-- // CONTENT TABLE --></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- // FLEXIBLE CONTAINER --></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- // CENTERING TABLE --></td>
+                            </tr>
+                            <!-- // END -->   <!-- MODULE ROW // -->
+                            <tr>
+                                <td align="center" valign="top"><!-- CENTERING TABLE // -->                                                                 <!-- // CENTERING TABLE --></td>
+                            </tr>
+                            <!-- // MODULE ROW -->   <!-- MODULE ROW // -->
+                            <tr>
+                                <td align="center" valign="top"><!-- CENTERING TABLE // -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top"><!-- FLEXIBLE CONTAINER // -->
+                                            <table border="0" cellpadding="30" cellspacing="0" width="500" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="padding-top:0;" align="center" valign="top" width="500" class="flexibleContainerCell"><!-- CONTENT TABLE // -->
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="flexibleContainer">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="left" valign="top" class="textContent">
+                                                                    <div style="text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;margin-top:10px;color:#5F5F5F;line-height:135%;">New Israel Fund provides critically-needed support to hundreds of national and community-based organizations working to safeguard civil and human rights, promote religious tolerance and pluralism and narrow economic and social gaps in Israel.</div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!-- // CONTENT TABLE --></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- // FLEXIBLE CONTAINER --></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- // CENTERING TABLE --></td>
+                            </tr>
+                            <!-- // MODULE ROW -->   <!-- MODULE ROW // -->                                                         <!-- // MODULE ROW -->   <!-- MODULE ROW // -->
+                            <tr>
+                                <td align="center" valign="top"><!-- CENTERING TABLE // -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top"><!-- FLEXIBLE CONTAINER // -->
+                                            <table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" valign="top" width="500" class="flexibleContainerCell">
+                                                        <table border="0" cellpadding="30" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center" valign="top"><!-- CONTENT TABLE // -->
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td valign="top" class="textContent">
+                                                                                <div style="text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;margin-top:0px;color:#5F5F5F;line-height:135%;">
+                                                                                <p style="text-align: center;"><a href="https://wfc2.wiredforchange.com/o/8678/p/salsa/donation/common/public/?donate_page_KEY=7699"><img width="250" vspace="0" hspace="0" height="68" border="0" src="https://wfc2.wiredforchange.com/o/8678/images/GreenDonateButton-250x68.png" alt="Contribute to NIF" /></a></p>
+                                                                                </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <!-- // CONTENT TABLE --></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- // FLEXIBLE CONTAINER --></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- // CENTERING TABLE --></td>
+                            </tr>
+                            <!-- // MODULE ROW -->
+                        </tbody>
+                    </table>
+                    <!-- // END -->   <!-- EMAIL FOOTER // --> <!--
+                    The table "emailBody" is the email's container.
+                    Its width can be set to 100% for a color band
+                    that spans the width of the page.
+                    -->
+                    <table bgcolor="#E1E1E1" border="0" cellpadding="0" cellspacing="0" width="500" id="emailFooter">
+                        <!-- FOOTER ROW // --> <!--
+                        To move or duplicate any of the design patterns
+                        in this email, simply move or copy the entire
+                        MODULE ROW section for each content block.
+                        -->
+                        <tbody>
+                            <tr>
+                                <td align="center" valign="top"><!-- CENTERING TABLE // -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top"><!-- FLEXIBLE CONTAINER // -->
+                                            <table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" valign="top" width="500" class="flexibleContainerCell">
+                                                        <table border="0" cellpadding="30" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top" bgcolor="#E1E1E1">
+                                                                    <div style="font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#828282;text-align:center;line-height:120%;">
+                                                                    <div>Copyright © 2014 <a href="http://www.charlesmudy.com/respmail/" target="_blank" style="text-decoration:none;color:#828282;"><span style="color:#828282;">Respmail</span></a>. All&#160;rights&#160;reserved.</div>
+                                                                    <div>
+                                                                    <p style="font-family: Arial, Helvetica,sans-serif;font-size: 11px; line-height:15px;font-weight: normal; text-align: center;color: #828282;">This email has been sent to [[Email]].<br />
+                                                                    Was this email forwarded to you? <a style="color: rgb(153, 153, 153);" href="http://www.nif.org/signup">Sign up to receive your own.</a><br />
+                                                                    To change your subscription settings, click <a style="color: rgb(153, 153, 153);" href="https://wfc2.wiredforchange.com/o/8678/p/salsa/supporter/unsubscribe/public/?email_blast_KEY=[[email_blast_KEY]]">here</a>.</p>
+                                                                    </div>
+                                                                    </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- // FLEXIBLE CONTAINER --></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- // CENTERING TABLE --></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- // END --></td>
+                </tr>
+            </tbody>
+        </table>
+        </center>
+    </body>
+</html>
